@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type = "text/css" rel = "stylesheet" href = "./resources/css/universal-styles.css"></link>
-    <link type = "text/css" rel = "stylesheet" href = "./resources/css/index-styles.css">
+    <link rel="stylesheet" href="./resources/css/details-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Ibarra+Real+Nova&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
         <nav class = "navbar-full" id = "navBarFull" style = "display: none;">
             <ul class = "navbar-ul">
                 <li><a href="./index.html" class = "nav-link nav-link-badge">G&M</a></li>
-                <li><a href = "#" class = "nav-link nav-link-active">HOME</a></li>
+                <li><a href = "./index.html" class = "nav-link">HOME</a></li>
                 <li><a href = "./our-story.html" class = "nav-link">OUR STORY</a></li>
-                <li><a href = "./details.html" class = "nav-link">DETAILS</a></li>
+                <li><a href = "#" class = "nav-link nav-link-active">DETAILS</a></li>
                 <li><a href = "#" class = "nav-link">GETTING THERE</a></li>
                 <li><a href = "#" class = "nav-link">REGISTRY</a></li>
                 <li><a href = "https://grahamandmaddy.rsvpify.com" class = "nav-link" target = "_blank">RSVP</a></li>
@@ -29,34 +29,26 @@
         </nav>
         <i class="fa-solid fa-bars fa-2xl" id = "menuButton"></i>
     </div>
-    <main class = "main-container" id = "mainContainer">
-        <div class = "main-div" id = "mainDiv">
-            <div class = "hero-section">
-                <h1 id = "hero-title">Graham<br>&<br>Maddy</h1>
-                <h3>together with their families</h3>
-                <img src="./resources/images/Flowers_grey.png" class = "flower">
-                <h3>joyfully invite you to their wedding celebration</h3>
-                <h2>June 3rd, 2023 @ 3pm</h2>
-                <a href = "https://grahamandmaddy.rsvpify.com" target = "_blank" class = "rsvp">RSVP</a>
-            </div>
-            <div class = "the-wedding-section">
-                <h2 id = "wedding-title">The Wedding</h2>
+    <main class = "main-container">
+        <div class = "main-div">
+            <div class = "details-section">
+                <h2 id = "details-title">Details</h2>
                 <div id = "when">
                     <h3>When</h3>
-                    <h4>June 3rd, 2023</h4>
+                    <h4 class = "details-section-subtext">June 3rd, 2023</h4>
                 </div>
                 <div id = "where">
                     <h3>Where</h3>
-                    <h4>The Bunka Centre</h4>
-                    <h4>Nika Yukko Japanese Gardens</h4>
+                    <h4 class = "details-section-subtext">The Bunka Centre</h4>
+                    <h4 class = "details-section-subtext">Nika Yukko Japanese Gardens</h4>
                 </div>
                 <div id = "reception">
                     <h3>Reception to Follow</h3>
-                    <h5>Paradise Canyon Golf Course</h5>
-                    <h5> 185 Canyon Blvd W</h5>
-                    <h5>Lethbridge, AB T1K 6V1</h5>
+                    <h5 class = "details-section-subtext">Paradise Canyon Golf Course</h5>
+                    <h5 class = "details-section-subtext">185 Canyon Blvd W</h5>
+                    <h5 class = "details-section-subtext">Lethbridge, AB T1K 6V1</h5>
                 </div>
-            </div>
+            </div> 
         </div>
     </main>
 </body>

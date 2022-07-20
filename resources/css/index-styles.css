@@ -1,32 +1,56 @@
-.main-div {
+  .main-div {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    height: 800px;
+    width: 100vw;
 }
 
+
 .hero-section {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 53%;
+    font-family: Montserrat;
+    height: 600px;
     width: 53%;
-    border: 3px solid var(--dark-grey);
-    border-radius: 1000px;
+    /*border: 3px solid var(--dark-grey);
+    border-radius: 1000px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 20%;
     padding: 3em;
+    text-align: center;
+    font-family: 'Cormorant SC';
+    color: var(--main-black);
+}
+
+#hero-title {
+    font-size: 2em;
 }
 
 .flower {
-    width: 50%;
+    width: 100%;
+}
+
+.rsvp {
+    border: 1px solid var(--main-rust);
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--main-rust);
+    margin-top: 1em;
+}
+
+.rsvp:hover, .rsvp:active {
+    cursor: pointer;
+    background-color: var(--main-rust);
+    color: var(--main-cream);
 }
 
 .the-wedding-section {
     display: grid;
     grid-template-columns: 1fr 10px 1fr;
-    grid-template-rows: repeat(4 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
                     "title title title"
                     "when empty where"
@@ -41,6 +65,7 @@
 #wedding-title {
     grid-area: title;
     align-self: center;
+    ;
 }
 #when {
     grid-area: when;
@@ -50,4 +75,12 @@
 }
 #reception {
     grid-area: reception;
+}
+.the-wedding-section h2, .the-wedding-section h3 {
+    border-bottom: 1px solid var(--main-cream);
+}
+@media only screen and (max-width: 500px) {
+    .the-wedding-section {
+        display: none;
+    }
 }
