@@ -4,38 +4,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100vw;
+    /*height: 800px;*/
+    width: 100%;
 }
 
-.details-section {
+.main-container {
+    flex-direction: column;
+}
+
+.directions-section {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
                     "title"
-                    "when"
+                    "ceremony"
                     "where"
                     "button"
                     "reception";
     text-align: center;
-    gap: 1em;
     margin: 15%;
-    margin-top: 20%;
+    margin-top: 25%;
     font-size: 1.5em;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
 }
-#details-title {
+#directions-title {
     grid-area: title;
     align-self: center;
     font-size: 1.5em;
     width: 100%;
 }
-#when {
-    grid-area: when;
-    margin-top: 20px;
+.ceremony-title, .reception-title {
+    padding: 0.5em;
+    margin: 5px;
+}
+#ceremony {
+    grid-area: ceremony;
+    
+    width: 100%;
 }
 #where {
     grid-area: where;
@@ -43,11 +51,17 @@
 #reception {
     grid-area: reception;
 }
-.details-section h2, .details-section h3, .reception-to-follow {
+.directions-section h2, .directions-section h3 {
     border-bottom: 1px solid var(--main-rust);
 }
 
-.details-section-subtext {
+.directions-section-subtext {
     font-family: Raleway;
     font-size: 0.7em;
+}
+
+@media only screen and (min-width: 350px) {
+    .main.div {
+        height: 5000px;
+    }
 }

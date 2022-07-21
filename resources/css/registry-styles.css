@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 800px;
     width: 100vw;
 }
 
-.details-section {
+.registry-section {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
@@ -27,7 +27,7 @@
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
 }
-#details-title {
+#registry-title {
     grid-area: title;
     align-self: center;
     font-size: 1.5em;
@@ -43,11 +43,11 @@
 #reception {
     grid-area: reception;
 }
-.details-section h2, .details-section h3, .reception-to-follow {
+.registry-section h2, .registry-section h3, .reception-to-follow {
     border-bottom: 1px solid var(--main-rust);
 }
 
-.details-section-subtext {
+.registry-section-subtext {
     font-family: Raleway;
     font-size: 0.7em;
 }
