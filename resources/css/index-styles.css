@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     /*height: 800px;*/
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 
@@ -95,9 +95,9 @@
     } 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
     .main-div {
-        height: 1800px;
+        height: 1700px;
     }
     .hero-section {
         margin-top: 0;

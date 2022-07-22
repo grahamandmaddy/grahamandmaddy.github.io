@@ -54,7 +54,7 @@ figcaption {
     grid-area: story;
     align-self: center;
     width: 80%;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1em;
     display: flex;
     flex-direction: column;
@@ -67,13 +67,16 @@ figcaption {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
     .our-story-section {
         height: 100px;
     }
     #our-story-title {
         font-size: 3em;
         margin: 20px;
+    }
+    #our-story-paragraph {
+        font-size: 1.5em;
     }
     .main-div {
         padding-top: 100px;
@@ -88,7 +91,7 @@ figcaption {
     }
     .flower {
         display: block;
-        width: 70%;
-        margin-top: 50px;
+        width: 50%;
+        margin-top: 100px;
     }
 }

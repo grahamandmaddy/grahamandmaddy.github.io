@@ -136,7 +136,7 @@
     background-size: cover;
     background-position: center;
     width: 90%;
-    height: 900px; 
+    /* height: 900px;  */
     align-self: center;
     /* padding-top: 50px; */
     max-width: 800px;
@@ -146,5 +146,25 @@
 @media only screen and (min-width: 400px) {
     .main-div {
         /* padding-top: 200px; */
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .navbar-full {
+        height: 50px;
+        top: 0;
+    }
+    .navbar-ul {
+        flex-direction: row;
+        height: 50px;
+    }
+    .nav-close-button {
+        display: none;
+    }
+    .nav-link-badge {
+        display: none;
+    }
+    #menuButton {
+        display: none;
     }
 }
