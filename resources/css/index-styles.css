@@ -10,18 +10,19 @@
 .hero-section {
     font-family: Montserrat;
     height: 600px;
-    width: 53%;
     /*border: 3px solid var(--dark-grey);
     border-radius: 1000px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20%;
-    padding: 3em;
+    margin-top: 30%;
+    /* width: 53%; */
+    margin: 3em;
     text-align: center;
     font-family: 'Cormorant SC';
     color: var(--main-black);
+    padding-top: 100px;
 }
 
 #hero-title {
@@ -57,15 +58,17 @@
                     "button button button"
                     "reception reception reception";
     text-align: center;
+    justify-content: center;
     gap: 1em;
     margin: 20%;
     font-size: 1.5em;
     line-height: 1.5em;
+    font-family: 'Ibarra Real Nova';
+    color: var(--main-black);
 }
 #wedding-title {
     grid-area: title;
     align-self: center;
-    ;
 }
 #when {
     grid-area: when;
@@ -76,11 +79,50 @@
 #reception {
     grid-area: reception;
 }
+#wedding-title, #when, #where, #reception {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+}
 .the-wedding-section h2, .the-wedding-section h3 {
-    border-bottom: 1px solid var(--main-cream);
+    width: fit-content;
+    border-bottom: 1px solid var(--main-rust);
 }
 @media only screen and (max-width: 500px) {
     .the-wedding-section {
         display: none;
+    } 
+}
+
+@media only screen and (min-width: 800px) {
+    .main-div {
+        height: 1800px;
+    }
+    .hero-section {
+        margin-top: 0;
+        padding-top: 350px;
+    }
+    #hero-title {
+        font-size: 3.5em;
+    }
+    .hero-section h3 {
+        font-size: 1.5em;
+    }
+    .hero-section h2 {
+        margin: 1em;
+    }
+    .flower {
+        width: 500px;
+    }
+    .the-wedding-section {
+        margin: 10% 15%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                        "title"
+                        "when"
+                        "where"
+                        "reception";
+        justify-content: center;
     }
 }

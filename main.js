@@ -13,7 +13,7 @@ navCloseButton.addEventListener('click', () => {
 })
 
 function showMenu () {
-    navBar.style.display = 'grid';
+    //navBar.style.display = 'grid';
     navBar.style.backgroundColor = 'var(--main-rust)';
     menuButton.style.display= 'none';
     navBar.style.animation = 'slideIn 1s';

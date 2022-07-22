@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 800px;*/
+    
     width: 100%;
 }
 
@@ -63,5 +63,16 @@
 @media only screen and (min-width: 350px) {
     .main.div {
         height: 5000px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-div {
+        padding-top: 0;
+        height: 800px;
     }
 }
