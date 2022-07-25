@@ -135,7 +135,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 90%;
+    /* width: 90%; */
     /* height: 900px;  */
     align-self: center;
     /* padding-top: 50px; */
@@ -149,7 +149,7 @@
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
     .navbar-full {
         height: 50px;
         top: 0;

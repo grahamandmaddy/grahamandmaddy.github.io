@@ -8,7 +8,6 @@
 
 
 .hero-section {
-    font-family: Montserrat;
     height: 600px;
     /*border: 3px solid var(--dark-grey);
     border-radius: 1000px;*/
@@ -27,6 +26,7 @@
 
 #hero-title {
     font-size: 2em;
+    padding-bottom: 1.5em;
 }
 
 .flower {
@@ -113,10 +113,10 @@
         margin: 1em;
     }
     .flower {
-        width: 500px;
+        width: 300px;
     }
     .the-wedding-section {
-        margin: 10% 15%;
+        margin: 5% 15%;
         grid-template-columns: 1fr;
         grid-template-areas: 
                         "title"
@@ -124,5 +124,17 @@
                         "where"
                         "reception";
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-div {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .main-div {
+        height: 800px;
     }
 }

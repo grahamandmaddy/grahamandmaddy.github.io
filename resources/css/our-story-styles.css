@@ -44,7 +44,7 @@
 }
 figcaption {
     margin-top: -60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 65px;
     line-height: 1em;
     font-size: 0.7em;
@@ -68,6 +68,9 @@ figcaption {
 }
 
 @media only screen and (min-width: 700px) {
+    figcaption {
+        font-size: 1.2em;
+    }
     .our-story-section {
         height: 100px;
     }

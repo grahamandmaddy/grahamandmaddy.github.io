@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    height: 900px;
     width: 100%;
 }
 
@@ -60,6 +60,10 @@
     font-size: 0.7em;
 }
 
+.map {
+    display: none;
+}
+
 @media only screen and (min-width: 350px) {
     .main.div {
         height: 5000px;
@@ -73,6 +77,11 @@
     }
     .main-div {
         padding-top: 0;
-        height: 800px;
+        height: 1100px;
+    }
+    .map {
+        grid-area: map;
+        display: block;
+        margin-top: 50px;
     }
 }
