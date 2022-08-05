@@ -23,18 +23,6 @@
     align-content: center;
 }
 
-#menuButton {
-    margin: 10px;
-    text-align: center;
-    z-index: 10;
-    color: var(--main-cream); 
-    align-self: center;
-}
-
-#menuButton:hover {
-    cursor: pointer;
-}
-
 .navbar-full {
     position: absolute;
     width: 100%;
@@ -42,20 +30,6 @@
     font-family: 'Cormorant SC';
     grid-template-columns: 100%;
     top: -550px;
-}
-
-.nav-close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-    background-color: var(--main-cream);
-    color: var(--main-rust);
-}
-
-.nav-close-button:hover {
-    cursor: pointer;
 }
 
 .navbar-ul {
@@ -118,6 +92,40 @@
     animation: slideOut;
     animation-duration: 3s;
 }
+#navMenu {
+    z-index: 100;
+    margin: 20px 15px;
+}
+#navMenu > span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 9999px;
+    background-color: var(--main-cream);
+}
+#navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+}
+#navMenu, #navMenu > span {
+    transition: all .4s ease-in-out;
+}
+#navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+#navMenu.active > span:nth-child(2) {
+    width: 0;
+}
+#navMenu.active > span:nth-child(1), 
+#navMenu.active > span:nth-child(3) {
+    transition-delay: .4s;
+}
+#navMenu.active > span:nth-child(1) {
+    transform: translateY(10px);
+}
+#navMenu.active > span:nth-child(3) {
+    transform: translateY(-10px) rotate(90deg);
+}
 
 .main-container {
     background-image: url('../images/RustTexture.1.png');
@@ -164,7 +172,7 @@
     .nav-link-badge {
         display: none;
     }
-    #menuButton {
+    #navMenu {
         display: none;
     }
 }
