@@ -26,7 +26,7 @@
 .navbar-full {
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 470px;
     font-family: 'Cormorant SC';
     grid-template-columns: 100%;
     top: -550px;
@@ -107,10 +107,10 @@
     margin-bottom: 7px;
 }
 #navMenu, #navMenu > span {
-    transition: all .4s ease-in-out;
+    transition: all .2s linear;
 }
 #navMenu.active {
-    transition-delay: 0.8s;
+    transition-delay: 0.3s;
     transform: rotate(45deg);
 }
 #navMenu.active > span:nth-child(2) {
@@ -118,7 +118,7 @@
 }
 #navMenu.active > span:nth-child(1), 
 #navMenu.active > span:nth-child(3) {
-    transition-delay: .4s;
+    transition-delay: .2s;
 }
 #navMenu.active > span:nth-child(1) {
     transform: translateY(10px);
