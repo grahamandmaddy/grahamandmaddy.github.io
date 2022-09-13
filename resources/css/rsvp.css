@@ -1,0 +1,53 @@
+.main-div {
+    background-image: url('../images/CreamArch.1.png');
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: 100vw;
+}
+
+.rsvp-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+                    "title"
+                    "when"
+                    "where"
+                    "button"
+                    "reception";
+    text-align: center;
+    gap: 1em;
+    margin: 15%;
+    margin-top: 20%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: var(--main-black);
+    font-family: 'Ibarra Real Nova';
+}
+#rsvp-title {
+    grid-area: title;
+    align-self: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+#when {
+    grid-area: when;
+    margin-top: 20px;
+}
+#where {
+    grid-area: where;
+}
+#reception {
+    grid-area: reception;
+}
+.rsvp-section h2, .rsvp-section h3, .reception-to-follow {
+    border-bottom: 1px solid var(--main-rust);
+}
+
+.rsvp-section-subtext {
+    font-family: Raleway;
+    font-size: 0.7em;
+}
